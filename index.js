@@ -1,7 +1,7 @@
 const express = require('express')
 const Datastore = require('nedb')
 const app = express()
-const port = 3000;
+const port = process.env.PORT || 3000;
 const path = require('path');
 const fetch = require('node-fetch'); 
 require('dotenv').config()
